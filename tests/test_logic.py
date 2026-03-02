@@ -1,6 +1,9 @@
+import sys
 import os
-from logic import add_expense, calculate_total, save_csv, load_csv, expenses
 
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from logic import add_expense, calculate_total, save_csv, load_csv, expenses
 
 def setup_function():
     expenses.clear()
